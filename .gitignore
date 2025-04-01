@@ -1,0 +1,8 @@
+#ignore bin
+bin/
+#ignore objects
+obj/
+#ignore private
+privateVariables.json
+#ignore log.txt
+log.txt
