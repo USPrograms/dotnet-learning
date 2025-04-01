@@ -12,9 +12,10 @@ class Program
 {
     static async Task Main(string[] args)
     {   
-        Console.WriteLine(Directory.GetCurrentDirectory());
+        Console.WriteLine(args[0]);
         //APIInterface = new APIInterface();
-        string city = "Mountain View";
+
+        string city = args[0];
         var apikeyHolder = new ConfigurationBuilder()
             .AddJsonFile(Path.Combine(Directory.GetCurrentDirectory(),"privateVariables.json"))
             .Build();
